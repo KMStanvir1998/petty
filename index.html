@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--navbar section-->
+    <header>
+        <div class="nav-container">
+            <ul class="flex justify-around py-2 mx-auto mt-5">
+                <li><a href="#"><img src="images/logo.webp" alt=""></a></li>
+                <div class="nav-menu flex justify-start items-center">
+                    <li class="mr-5"><a class="text-2xl font-semibold" href="#">Home</a></li>
+                    <li class="mr-5"><a class="text-2xl font-semibold" href="#">Shop</a></li>
+                    <li><a class="text-2xl font-semibold" href="#">Contact</a></li>
+                </div>
+                <li><a href="#"><img src="images/icon01.png" alt=""></a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <!--navbar section-->
+
+    <main>
+        <section class="banner-section mt-[80px]">
+            <div class="container mx-auto w-[50%] text-center">
+                <h4 class="text-[#131313] text-2xl mb-[15px]">Bringing Families Together ❤️‍🔥</h4>
+                <h1 class="text-7xl text-bold mb-[15px]">Your Path to Adoption <br> Starts Here</h1>
+                <p class="text-base mb-[15px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it ha</p>
+                <button class="bg-[#0E7A81] text-white px-[20px] py-[10px] rounded-lg cursor-pointer btn-view_more">View More</button>
+
+                <div class="banner-image flex justify-center items-center mt-[20px]">
+                    <img src="images/pet.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <nav id="categories" class="flex justify-center gap-5 py-2"></nav> 
+        </section>
+
+        <section id="pets" class="all-pets w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
+            
+        </section>
+    </main>
+    
+    <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div class="modal-content">
+         
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  
+    <footer class="footer bg-[#131313] text-neutral-content p-10 grid md:grid-cols-2 lg:grid-cols-3">
+        <nav class="mx-auto">
+          <h6 class="footer-title"><img src="images/footer-logo.png" alt=""></h6>
+          <ul class="text-left">
+            <li class="mb-[5px]">Location: av. Washington 165, NY CA </li>
+            <li class="mb-[5px]">54003</li>
+            <li class="mb-[5px]">Phone: +31 85 964 47 25</li>
+            <li class="mb-[5px]">Email: info@yourdomain.com</li>
+            <li class="mb-[5px]">Openings hours: 9.00 AM - 5.00 PM</li>
+            <div class="flex items-left justify-start gap-x-[15px]">
+                <img src="images/facebook.png" alt="">
+                <img src="images/twitter.png" alt="">
+                <img src="images/instagram.png" alt="">
+                <img src="images/youtube.png" alt="">
+            </div>
+          </ul>
+        </nav>
+        <nav class="mx-auto">
+          <h6 class="footer-title">Useful Links</h6>
+          <a class="link link-hover mb-[5px]">Home</a>
+          <a class="link link-hover mb-[5px]">About us</a>
+          <a class="link link-hover mb-[5px]">Animals</a>
+          <a class="link link-hover mb-[5px]">Foundation</a>
+          <a class="link link-hover mb-[5px]">Contact</a>
+        </nav>
+        <nav class="mx-auto">
+          <h6 class="footer-title">Drop a Message</h6>
+           <div class="part">
+            <input type="text" placeholder="Enter Your Email" class="footer-input">
+           <button class="bg-[#0E7A81] text-white px-[20px] py-[10px] rounded-lg cursor-pointer btn-view_more">Subscribe</button>
+           </div>
+        </nav>
+      </footer>
+
+    <script src="js/all.js"></script>
+</body>
+</html>
